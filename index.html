@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mood Playlist Picker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Mood Playlist Picker 🎧</h1>
+    <p class="sub">How are you feeling today?</p>
+
+    <div id="moods" class="moods"></div>
+
+    <button id="surprise" class="surprise">✨ Surprise me</button>
+
+    <section id="player" class="player hidden">
+      <h2 id="playerTitle"></h2>
+      <p id="playerNote" class="note"></p>
+      <iframe
+        id="embed"
+        title="Spotify playlist"
+        height="380"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      ></iframe>
+      <a id="openLink" class="open" target="_blank" rel="noopener">Open in Spotify</a>
+    </section>
+  </main>
+
+  <script src="moods.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
